@@ -9,8 +9,6 @@ A module to create a multizone OpenShip cluster on IBM Classic infrastructure.
 
 ## Table of Contents
 1. [Module Variables](##Module-Variables)
-2. [Outputs](##Outputs) (optional)
-3. [As a Module in a Larger Architecture](##As-a-Module-in-a-Larger-Architecture)
 
 ---
 ## Module Variables
