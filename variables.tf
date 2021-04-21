@@ -52,6 +52,11 @@ variable kube_version {
   default     = "1.17"
 }
 
+variable default_pool_size {
+  description = "Default pool size for cluster. Must be at least 2"
+  type        = number
+  default     = 2  
+}
 
 variable hardware {
   description = "Hardware type for cluster, shared or dedicated"
