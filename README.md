@@ -1,6 +1,6 @@
 # IKS Cluster on Classic
 
-A module to create a multizone OpenShip cluster on IBM Classic infrastructure.
+A module to create a single zone Kubernetes cluster on IBM Classic infrastructure.
 
 ## Creates
 
