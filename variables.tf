@@ -21,7 +21,6 @@ variable vlans {
       {
         private_vlan_id = string
         public_vlan_id  = string
-        zone            = string
       }
     )
   )
@@ -29,7 +28,6 @@ variable vlans {
     {
       private_vlan_id = "2907904"
       public_vlan_id  = "2907902"
-      zone            = "fra02"
     }
   ]
 }
@@ -50,6 +48,12 @@ variable kube_version {
   description = "Version of kubernetes to use"
   type        = string
   default     = "1.17"
+}
+
+variable data_center {
+  description = "Datacenter"
+  type        = string
+  default     = "fra02"
 }
 
 variable default_pool_size {
