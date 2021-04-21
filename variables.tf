@@ -50,6 +50,18 @@ variable kube_version {
   default     = "1.17"
 }
 
+variable public_endpoint {
+  description = "Determine public service endpoint"
+  type        = string
+  default     = "true"
+}
+
+variable private_endpoint {
+  description = "Determine private service endpoint"
+  type        = string
+  default     = "true"
+}
+
 variable data_center {
   description = "Datacenter"
   type        = string
