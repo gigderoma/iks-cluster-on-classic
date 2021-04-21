@@ -10,7 +10,7 @@
 resource ibm_container_cluster kubernetes_cluster {
 
     name              = var.cluster_name
-    datacenter        = var.zone
+    datacenter        = var.data_center
     machine_type      = var.machine_type
     hardware          = var.hardware
     kube_version      = var.kube_version
