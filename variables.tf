@@ -29,17 +29,7 @@ variable vlans {
     {
       private_vlan_id = "2907904"
       public_vlan_id  = "2907902"
-      zone            = "dal10"
-    },
-    {
-      private_vlan_id = "2049043"
-      public_vlan_id  = "2049045"
-      zone            = "dal12"   
-    },
-    {
-      zone            = "dal13"
-      private_vlan_id = "2627161"
-      public_vlan_id  = "2627163"
+      zone            = "fra02"
     }
   ]
 }
