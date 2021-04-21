@@ -62,11 +62,6 @@ variable kube_version {
   default     = "1.17"
 }
 
-variable default_pool_size {
-  description = "Default pool size for cluster. Must be at least 2"
-  type        = number
-  default     = 2  
-}
 
 variable hardware {
   description = "Hardware type for cluster, shared or dedicated"
@@ -80,10 +75,6 @@ variable machine_type {
   default     = "b2c.4x16"
 }
 
-variable entitlement {
-    description = "If you purchased an IBM Cloud Cloud Pak that includes an entitlement to run worker nodes that are installed with OpenShift Container Platform, enter entitlement to create your cluster with that entitlement so that you are not charged twice for the OpenShift license. Note that this option can be set only when you create the cluster. After the cluster is created, the cost for the OpenShift license occurred and you cannot disable this charge."
-    type        = string
-    default     = "cloud_pak"
-}
+
 
 ##############################################################################
