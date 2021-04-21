@@ -7,37 +7,25 @@ variable ibmcloud_api_key {
   type        = string
 }
 
-##############################################################################
-
-
-##############################################################################
-# Network Variables
-##############################################################################
-
-variable vlans {
-  description = "List containing a map of public and private VLANs for the cluster. The first in this list will always be for the master. Each pair of VLANs must be in the same zone"
-  type        = list(
-    object(
-      {
-        private_vlan_id = string
-        public_vlan_id  = string
-      }
-    )
-  )
-  default = [
-    {
-      private_vlan_id = "2907904"
-      public_vlan_id  = "2907902"
-    }
-  ]
-}
-
-##############################################################################
 
 
 ##############################################################################
 # Cluster Variables
 ##############################################################################
+
+variable private_vlan_id {
+  description = "Name of the private vlan-id"
+  type        = string
+  default     = "2907904"
+}
+
+
+variable public_vlan_id  {
+  description = "Name of the public vlan-id"
+  type        = string
+  default     = "2907904"
+}
+
 
 variable cluster_name {
   description = "Name of openshift cluster to be created"
