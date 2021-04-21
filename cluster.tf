@@ -11,7 +11,7 @@ locals {
 
 
 ##############################################################################
-# Create Openshift Cluster
+# Create Kubernetes Cluster
 ##############################################################################
 
 resource ibm_container_cluster openshift_cluster {
