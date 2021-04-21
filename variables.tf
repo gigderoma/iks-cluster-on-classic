@@ -59,7 +59,7 @@ variable cluster_name {
 variable kube_version {
   description = "Version of kubernetes to use"
   type        = string
-  default     = "4.3_openshift"
+  default     = "1.17"
 }
 
 variable default_pool_size {
